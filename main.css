@@ -1,0 +1,78 @@
+body {
+<<<<<<< HEAD
+    background-image: url("/Brian-ChM/img/bg.jpg");
+=======
+    background-image: url(/Brian-ChM/img/bg.jpg);
+>>>>>>> origin
+    background-blend-mode: multiply;
+    background-position: 0cm -16cm;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+span.nombre {
+    display: block;
+    font-family: "Courier New";
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 16ch;
+
+    animation: typing 4s steps(16) infinite, blink .5s infinite;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    0% {width: 0;}
+    50% {width: 100%;}
+    100% {width: 100%;}
+}
+
+@keyframes blink {
+    50% {border-color: transparent;}
+}
+
+.btn-contact:hover {
+    color: #ffc107 !important;
+}
+
+#proyectos {
+    position: relative;
+}
+
+#proyectos::before {
+    content: "" !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 50px !important;
+    background: linear-gradient(to top, #212529, transparent) !important;
+    z-index: 1000 !important;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item::before {
+    content: "" !important;
+    position: absolute !important;
+    left: 25%;
+    bottom: 0 !important;
+    width: 50% !important;
+    height: 30% !important;
+    background: linear-gradient(to top, #212529, #21252948) !important;
+    z-index: 0 !important;
+}
+
+@media (max-width: 768px) {
+    #about-me {
+        display: flex;
+        flex-direction: column;
+    }
+    .col-5 {
+        width: 80% !important;
+    }
+    picture.col-5 {
+        width: 50% !important;
+    }
+}
